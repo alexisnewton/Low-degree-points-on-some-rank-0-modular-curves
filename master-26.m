@@ -1,6 +1,6 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//  This is a complete determination of the quartic points on X1(26)
+//  This is a complete determination of the quartic and quintic points on X1(26)
 //////////////////////////////////////////////////////////////////////////////////////////
  
 /****************************************************************************** 
@@ -101,7 +101,7 @@
    
 
   //////////////////////////////////////////////////////////////////////
-  // Compute the image of Abel--Jacobi mod 3
+  // Compute the image of Abel--Jacobi mod 3, Quartic
   //////////////////////////////////////////////////////////////////////  
     
   "There are", [#Places(Cp,i) : i in [1..5]], "places of degree 1, 2, 3, 4 and 5 over F_3"; // [ 12, 0, 16, 12, 48 ]   
@@ -149,7 +149,9 @@ moreValidQuarticImages := {@@};
  //this is 15 choose 4 
 
 
-////quintic
+ //////////////////////////////////////////////////////////////////////
+  // Compute the image of Abel--Jacobi mod 3, Quintic
+  //////////////////////////////////////////////////////////////////////  
 
   validQuinticImages := {@@};
   for pl in Places(Cp,5) do
