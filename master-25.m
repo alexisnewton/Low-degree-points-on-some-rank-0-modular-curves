@@ -119,6 +119,11 @@ basePt := [0 , 0 , 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0, 0 , 0];
 
 
     
+
+  //////////////////////////////////////////////////////////////////////
+  // Compute the image of Abel--Jacobi mod 3
+  //////////////////////////////////////////////////////////////////////  
+    
   validQuarticImages := {@@};
   for pl in Places(Cp,4) do
       D := Divisor(pl) - Degree(pl)*basePt;
